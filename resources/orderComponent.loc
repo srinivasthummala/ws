@@ -1,0 +1,6 @@
+name.client.orderComponent = {\"locator\":\"xpath=//td[2]\"}
+order.amount.orderComponent = {\"locator\":\"xpath=//td[3]\"}
+edit.btn.orderComponent = {\"locator\":\"link=Edit\"}
+view.btn.orderComponent = {\"locator\":\"link=View\"}
+delete.btn.orderComponent = {\"locator\":\"link=Delete\"}
+order.id.orderComponent = {\"locator\":\"xpath=//td[1]\"}

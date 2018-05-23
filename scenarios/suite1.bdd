@@ -1,0 +1,59 @@
+
+
+SCENARIO: Create order
+META-DATA: {"description":"Create 5 new orders","groups":["SMOKE"],"key":"orders.order"}
+	
+	Given user creates new order with details '${clientName}','${amount}'
+	Then user verifies order created
+	And store order id in 'orderId'
+	When user updates order details '${clientName}','${amount}' with id '${orderId}'
+	Then user verifies order updated with id '${orderId}'
+	And user checks order exist with id '${orderId}'
+	When User deletes order with id '${orderId}'
+	Then user verifies order with id '${orderId}' deleted
+	
+END
+
+SCENARIO: Update order
+META-DATA: {"description":"Update order","groups":["SMOKE"],"key":"orders.update"}
+	
+	Given user updates order details '${uclientName}','${uamount}' with id '${orderId}'
+	Then user verifies order updated with id '${orderId}'
+	
+END
+
+SCENARIO: Delete order
+META-DATA: {"description":"Delete order","groups":["SMOKE"]}
+	
+	Given user checks order exist with id '${orderId}'
+	When User deletes order with id '${orderId}'
+	Then user verifies order with id '${orderId}' deleted
+	
+END
+
+SCENARIO: View all orders
+META-DATA: {"description":"View all orders","groups":["SMOKE"]}
+	
+	Given user view all the orders
+	Then user stores all orders in report
+	
+END
+
+#SCENARIO: Pacth
+#META-DATA: {"description":"patch order","groups":["SMOKE"]}
+#	
+#	Given user updates order details '359' with id '353'
+#	
+#	
+#END
+
+SCENARIO: Pacths
+META-DATA: {"description":"patch order","groups":["SMOKE"]}
+	
+	#Given user updates order details '359' with id '353'
+	Given navigates to site
+	
+	
+END
+
+

@@ -1,0 +1,3 @@
+createnew.btn.home = {\"locator\":\"link=Create a new order\",\"desc\":\"\"}
+order.particular.orderComponent = {\"locator\":\"xpath=//tr[td[text()='%s']]\"}
+orders.lst.home = {\"locator\":\"xpath=//tr[td]\"}

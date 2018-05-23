@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<orders>
+		<!-- <order>
+			<clientName>John</clientName>
+			<amount>128</amount>
+		</order>
+		<order>
+			<clientName>Nick</clientName>
+			<amount>128</amount>
+		</order>
+		<order>
+			<clientName>Stephen</clientName>
+			<amount>128</amount>
+		</order>
+		<order>
+			<clientName>Cristena</clientName>
+			<amount>128</amount>
+		</order> -->
+		<order>
+			<clientName>David</clientName>
+			<amount>128</amount>
+		</order>
+		<update>
+			<uclientName>Tony</uclientName>
+			<uamount>348</uamount>
+		</update>
+	</orders>
+</root>
